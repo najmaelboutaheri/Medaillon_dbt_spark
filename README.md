@@ -77,7 +77,7 @@ Medaillon_dbt_spark/
 ### Bronze — Raw Ingestion
 - **Format:** Parquet
 - **Content:** Exact copy of source tables from Azure SQL, no transformations
-- **Partitioned by:** ingestion date (e.g. `20260424/`)
+- **Partitioned by:** ingestion date (Example: `20260424/`)
 - **Purpose:** Immutable source of truth — never modified
 
 ### Silver — Cleaned & Reliable
