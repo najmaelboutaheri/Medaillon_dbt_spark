@@ -21,7 +21,7 @@ with source_data as (
         StateProvince,
         CountryRegion,
         PostalCode
-    from {{ source('saleslt', 'address') }}
+    from {{ source('saleslt', 'productcategory') }}
 )
 select *
 from source_data

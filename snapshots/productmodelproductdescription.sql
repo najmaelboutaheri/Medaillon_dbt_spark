@@ -8,7 +8,7 @@ e
       location_root = "wasbs://silver@datalakegenversion1.blob.core.windows.net/snapshots/productmodelproductdescription",
       target_schema='snapshots',
       invalidate_hard_deletes=True,
-      unique_key='ProductModelID',
+      unique_key="ProductModelID||'-'||ProductDescriptionID", 
       strategy='check',
       check_cols='all'
     )
@@ -20,10 +20,11 @@ with productmodelproductdescription_snapshot as (
        ProductDescriptionID,
        Culture,
        rowguid,
-       ModifiedDat
+       ModifiedDate
     FROM {{ source('saleslt', 'productmodelproductdescription') }}
 )
 
 select * from productmodelproductdescription_snapshot
 
 {% endsnapshot %}
+

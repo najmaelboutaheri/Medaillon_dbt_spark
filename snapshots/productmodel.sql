@@ -12,11 +12,13 @@
     )
 }}
 
-with product_snapshot as (
+with productmodel_snapshot as (
     SELECT
         ProductModelID,
         Name,
-        CatalogDescription
+        CatalogDescription,
+        rowguid,
+        ModifiedDate
     FROM {{ source('saleslt', 'productmodel') }}
 )
 
