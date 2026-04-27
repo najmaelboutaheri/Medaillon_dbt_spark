@@ -125,7 +125,7 @@ Data is sourced from the `SalesLT` schema in Azure SQL Database:
 
 ```bash
 # Clone the repository
-git clone <your-repo-url>
+git clone [<your-repo-url>](https://github.com/najmaelboutaheri/Medaillon_dbt_spark/)
 cd Medaillon_dbt_spark
 
 # Create and activate virtual environment
@@ -228,5 +228,5 @@ Snapshots track every change to source data over time. Each snapshot adds metada
 
 ## Author
 
-Najma  
+Najma  EL BOUTAHERI 
 Data Engineer  
