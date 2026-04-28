@@ -199,6 +199,17 @@ dbt test
 dbt docs generate
 dbt docs serve
 ```
+Tables created and saved to gold layer are :
+
+**DIM_CUSTOMERS** with the following joins: 
+<img width="1492" height="425" alt="image" src="https://github.com/user-attachments/assets/219fb2ae-cb1a-466f-8d5b-14d7ca9c0934" />
+
+**DIM_PRODUCTS** with the following joins: 
+<img width="1468" height="365" alt="image" src="https://github.com/user-attachments/assets/7ecf0ab9-997e-4cc6-993d-da9570b6b874" />
+
+**DIM_SALES** is created using the following tables: 
+<img width="1408" height="382" alt="image" src="https://github.com/user-attachments/assets/2698642c-0c59-4b52-a349-453c78fade51" />
+
 
 ---
 
