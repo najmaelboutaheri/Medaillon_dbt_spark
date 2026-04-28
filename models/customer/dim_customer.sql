@@ -2,7 +2,8 @@
     config(
         materialized = "table",
         file_format = "delta",
-        location_root = "/mnt/gold/customers"
+        location_root = "wasbs://gold@datalakegenversion1.blob.core.windows.net/customers"
+         
     )
 }}
 
